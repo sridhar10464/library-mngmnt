@@ -1,0 +1,54 @@
+.ball{
+    position: relative;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #00ff00;
+    offset-path: path('M0,0 L50,0 L100,0 C100,-50 50,-100 0,0');
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .ball2{
+    position: relative;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #33ccff;
+    offset-path: path('M0,0 L50,0 C50,-50 0,-100 -50,0 L0,0');
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .ball3{
+    position: relative;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #ff9933;
+    offset-path: path('M0,0 C0,-50 -50,-100 -100,0 L-50,0 L0,0');
+    animation-name: anim3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes anim1 {
+    to{
+      offset-distance:100%;
+    }
+  }
+  
+  @keyframes anim2 {
+    to{
+      offset-distance:100%;
+    }
+  }
+  
+  @keyframes anim3 {
+    to{
+      offset-distance:100%;
+    }
+  }
