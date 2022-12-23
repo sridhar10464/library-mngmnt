@@ -60,7 +60,7 @@ export default function Book(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     funDesc();
-  },[])
+  },[funDesc])
   const[data,setData] = useState(book);
   const[preventClick, setPreventClick] = useState(false)
   const[preventFav, setPreventFav] = useState(false);
@@ -152,7 +152,7 @@ export default function Book(props) {
         }
         setPreventClick(false);})
   }
-  const funDesc = React.useCallback(() => {
+  const funDesc = React.useCallback((data) => {
     var list1 = data.description.replace(/-=>/g,"<br/><ol><li class='li'>");
     var list2 = list1.replace(/<=-/g,"</li></ol>");
     var list3 = list2.replace(/_,_/g,"</li><li class='li'>");

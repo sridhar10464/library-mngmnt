@@ -55,7 +55,7 @@ export default function MyLibrary(props) {
         history.push("/login")
       }
     }
-  },[user])
+  },[user.history.initSizeData.book])
 
   const handleChange = (e,n) => {
     setLink(n)

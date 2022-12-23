@@ -48,7 +48,7 @@ export default function Login(props) {
         setError(au);
       }
     }
-  },[])
+  },[props.location.search])
   const handleDefault = () => {
     setPreventClick(true)
     var user = new FormData();

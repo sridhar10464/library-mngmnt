@@ -17,7 +17,7 @@ export default function Home(props) {
       if(ver==='1'){setRespon("Please check your email to verify account")}
       if(logout==='1'){setRespon("Logout Successfully !!!")}
     }
-  },[])
+  },[props.location.search])
   return(
     <>
       <Box sx={{background: '#009999',minHeight: '100vh'}}>

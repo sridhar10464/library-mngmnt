@@ -188,7 +188,7 @@ export default function Setting() {
         setError(err.message)
       }
       history.push('/login');})
-  },[])
+  },[getprof.history])
   const defaultVer = (
     <Paper sx={{width:'30%',maxWidth:'30%', display:{xs:'none', md:'block'}}}>
       <Stack>

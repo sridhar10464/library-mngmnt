@@ -178,7 +178,7 @@ export default function Profile(props) {
         setError(err.message)
       }
     } if(container){history.push("/login")}})
-  },[]);
+  },[container.dispatch.history.isOnline.userProfile]);
   const preload = (
     <>
       <Box display='flex' alignItems='center' justifyContent='flex-end' style={{paddingTop:'10px', width:'100%'}}>

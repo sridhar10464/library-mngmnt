@@ -36,7 +36,7 @@ export default function VerOAuth(props) {
         }
       });
     }
-  },[])
+  },[props.location.search])
   return(
     <Box justifyContent='center' alignItems='center' display='flex' flexWrap='wrap' sx={{height:'100vh'}}>
       {(!error)? (
